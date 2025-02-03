@@ -1,0 +1,40 @@
+Asset Num,Asset Description,Location,Kks Number,Parent Asset Num,Rotating Item,Status,Site
+ABC-D Asset,abc-d asset,Location Test 23 Jan,5,,,active,asd
+ABC-X Asset,abc-x asset,Location Test 23 Jan,7,,,active,asd
+ABC-N Asset,asset abc-n,Location Test 23 Jan,8,,,active,asd
+ABC-I Asset,asset abc-i,Location Test 23 01 25,9,ABC-D Asset,,active,asd
+Testing ,testinggggg,Location Test 23 01 25,3,Test Asset 235245,,active,asd
+Test Asset 235245,Test q1324,Location Test 23 01 25,KKS123,,,not_ready,asd
+Test 244,test 244,Location Test 10 Des 24,test244,,,limited_use,asd
+Test 125,test 125,Location Test 12 Nov A,test125,,,limited_use,asd
+Asset Test 133,Desc 123,Location Test 12 Nov 2024,KKS1234,,,operating,asd
+Asset Test 08.01.2025 001-RS,SKRK TA 00 PIPING & VALVE INSTALATIONS (FROM PUMP TO MAIN RESERVOIR) RAW WATER,Location Test 08.01.2025 RS,KKS.08.01.2025.11.48,,,active,asd
+Asset 20122024-001,Test id 440,Location Test 24 June D Edit,440,,,active,asd
+Asset 10122024 -rs,Asset 10122024 -rs,Location Test 12 Nov 2024,1012,Asset 20122024-001,,active,asd
+Asset 10 12 24,desc Asset 10 12 24,Location Test 12 Nov 2024,1012240000001,Asset 20122024-001,,active,asd
+Asset test06,Test asset muncul di meters where used asset,Location Test 12 Nov 2024,06,ASSET007 example 123,,active,asd
+ASSET-013-RS,Asset 013 example description,Location Test 12 Nov 2024,KKS-013-RS,Asset test06,,active,asd
+ASSET-012-RS,Asset 011 example description,Location Test 12 Nov A,KKS-012-RS,,,active,asd
+ASSET-011-RS,Asset 011 example description,Location Test 12 Nov A,KKS-011-RS,Asset A,,active,asd
+Asset B,Asset B dec,Location Test 12 Nov 2024,B000001,,,active,asd
+Asset A,Asset A desc,Location Test 12 Nov 2024,A00001,Asset test06,,active,asd
+ASSET008 example 123,halo coba desc 123 cek,Location Test D,170601TG01MBP10QP100123-test,ASSET007 example 123,,operating,TEST123
+ASSET007 example 123,halo coba desc 123,Location Test 12 Nov 2024,170601TG01MBP10QP100123,Asset A,,active,asd
+ASSET0078 example,Halo2 coba unique,Location Example 21-1,170601TG01MBP10QP10045,Asset A,,active,asd
+test123-355,test123-355,Location Example 9-1,test123-355,safafdfasfdsgfs,,inactive,TEST123
+safafdfasfdsgfs,ddfgdgfaga,Location Example 9-1,12345677890111,ASSET005 example,,active,TEST123
+sdfgfhfndgjhdz,fdgafgdzd,Location Example 9-1,fdbzdf,ASSET005 example,,active,TEST123
+ASSET007 example,Asset 007 example description,Location Example 9,kks-000007,PLTL-TG-01-MBP10_Y004,,inactive,asd
+ASSET006 example,Asset 006 example description,Location Example 18,kks-000006,ASSET007 example 123,,inactive,asd
+ASSET005 example,Asset 005 example descriptions,Location Example 23,kks-000005,asset not parent,,inactive,TEST123
+asset not parent,asset not parent,73757,kks-00002222,ASSET007 example,123,active,TEST123
+PLTL-TG-01-MBP10_Y004,"PLTL TG 004 FUEL SUPPLY SYSTEM (GASEOUS), INSTRUMENTASI CONTOH",Location Example 19,170601TG01MBP10QP1004,ASSET007 example 123,,active,asd
+PLTL-TG-01-MBP10QP1003,"PLTL TG 03 FUEL SUPPLY SYSTEM (GASEOUS), INSTRUMENTASI CONTOH",Location Example 23,170601TG01MBP10QP1003,ASSET007 example 123,,active,asd
+TRF_01_TEST,Asset Trafo 1 test,73757,170601TG01MBP10QP1003,safafdfasfdsgfs,,active,asd
+TRF_01_TEST,Asset Trafo 1 test,Loc A-1,TRF_01_TEST_KKS,ASSET007 example 123,,active,asd
+ICON-COBA,Test New ,Location Example 22,32321312,ASSET007 example,,active,TEST123
+ICN,asset desc test edit,LOC004,kks-n123,PLTL-TG-01-MBP10QP1003,,OPERATING,TEST123
+asset 5,asset desc,Loc A-1,kks-00002,asset 2-3,,OPERATING,TEST123
+asset 2-3,asset desc,Loc A-1,kks-00002,ASSET001,,Active,TEST123
+ASSET002,Sample Asset 2,LOC001,KKS002,ICN,,Active,TEST123
+ASSET001,Sample Asset 1,LOC001,KKS001,PLTL-TG-01-MBP10QP1003,,Active,TEST123

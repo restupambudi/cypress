@@ -1,7 +1,6 @@
 {
-    "validUsername": "standard_user",
-    "validPassword": "secret_sauce",
-    "invalidUsername": "woods",
-    "invalidPassword": "123456"
-  }
-  
+  "validUsername": "green",
+  "validPassword": "Password!123",
+  "invalidUsername": "woods",
+  "invalidPassword": "123456"
+}

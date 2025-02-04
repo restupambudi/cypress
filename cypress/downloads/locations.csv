@@ -1,0 +1,45 @@
+Location,Location Description,Location Priority,Location Status,Location Type,Site
+Kent,Delectatio quidem tantum vergo tertius acerbitas ipsam aetas.,0,planned,operating,asd
+West Sussex,In utor adinventitias omnis desino annus.,0,planned,operating,asd
+Monroe County,Dens urbanus amitto carmen eaque chirographum alo eligendi.,0,planned,operating,asd
+Johnson County,Delectus terror animus corporis ago capto statim deorsum.,0,planned,operating,asd
+Location Test 23 Jan,Desc Loc 23 Jan,0,planned,vendor,asd
+Location Test 23 01 25,Desc Loc 230125,0,planned,operating,asd
+tttt 1,ttttt 1,1,planned,operating,asd
+Location Test 08.01.2025 RS,Description location here,8,planned,operating,asd
+Location Test 10 Des 24,desc Location Test 10 Des 24,0,planned,vendor,asd
+Location Test 12 Nov 2024,Location description test 12 Nov 2024,0,operating,operating,asd
+Location Test 12 Nov C,desc Location Test 12 Nov C,0,planned,operating,asd
+Location Test 12 Nov B,desc Location Test 12 Nov B,0,planned,operating,asd
+Location Test 12 Nov A,desc Location Test 12 Nov A,0,planned,operating,asd
+Location Test A edit,description Location Test A- edit,0,planned,storeroom,asd
+Location Test 24 June D Edit,24 June Desc.D Edit,5,decommissioned,courier,asd
+Location Test 24 June C,Location 24 June C,5,planned,salvage,asd
+Location Test 24 June B,Location 24 June B,3,planned,operating,asd
+Location Coba Hazard,Location Coba Hazard,0,operating,storeroom,asd
+Loc Test 2,Loc Test 2 desc,0,planned,vendor,asd
+Location Example 21-1,Loc desc 21,1,planned,operating,asd
+Location Example 111,Desc Location 111,2,planned,operating,asd
+Loc Test 3,Loc Test desc,0,operating,vendor,BANDUNG
+Location Example 9,Desc Location,1,planned,operating,BANDUNG
+Location Example 18-1,Desc Location 18,1,planned,operating,BANDUNG
+Loc A-1,A-1 Area location,1,decommissioned,storeroom,BANDUNG
+,,0,decommissioned,storeroom,TEST123
+Location Test D,desc Location Test D,0,planned,salvage,TEST123
+Location Test ,desc Location Test C,0,planned,operating,TEST123
+Location Test B,description Location Test B,1,operating,operating,TEST123
+Location Example 9-1,Desc Location,0,planned,operating,TEST123
+Loc Test 1,Loc Test 1 des,0,planned,operating,TEST123
+Location Example 10,Desc Location,2,operating,salvage,TEST123
+Location Example 23,Desc Location 23,1,planned,operating,TEST123
+Location Example 21,Desc Loc 21,3,planned,operating,TEST123
+Location Example 18,Desc Location 18,1,planned,vendor,TEST123
+73757,ini hasil uji,1,operating,operating,TEST123
+Location Example 22,Desc Location,1,planned,operating,TEST123
+Location Example 19,Desc Location,2,planned,operating,TEST123
+Location Example 18-2,Desc Location,1,planned,operating,TEST123
+LOC005,PT PLN Pembangkitan Jawa ,1,operating,operating,TEST123
+LOC004,Power Transmisi dan AUX Power Supply,1,operating,operating,TEST123
+LOC003,Unit Common,1,operating,operating,TEST123
+LOC002,Sektor Teluh Sirih,1,operating,operating,TEST123
+LOC001,PT PLN Pembangkitan Sumatera ,1,operating,operating,TEST123

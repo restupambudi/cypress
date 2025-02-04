@@ -8,7 +8,7 @@ describe('Assets Functionality', () => {
         });
     })
 
-    it('should find an asset', () => {
+    it('Should find an asset', () => {
         cy.get(':nth-child(2) > .nav-item').click();
         cy.get('[href="#/page/assets"] > p').click();
         cy.get(':nth-child(1) > .px-4 > .border-none').type('ABC-X Asset{enter}');
@@ -16,14 +16,14 @@ describe('Assets Functionality', () => {
         cy.contains('Assets ID : 49').should('be.visible');
     })
 
-    it('should not find an asset', () => {
+    it('Should not find an asset', () => {
         cy.get(':nth-child(2) > .nav-item').click();
         cy.get('[href="#/page/assets"] > p').click();
         cy.get(':nth-child(1) > .px-4 > .border-none').type('!@#{enter}');
         cy.contains('No Data Found').should('be.visible');
     })
 
-    it('should download assets file', () => {
+    it('Should download assets file', () => {
         cy.get(':nth-child(2) > .nav-item').click();
         cy.get('[href="#/page/assets"] > p').click();
         cy.get('.p-4 > :nth-child(1) > .cursor-pointer').click();
@@ -35,7 +35,7 @@ describe('Assets Functionality', () => {
         });
     })
 
-    it('should create a new asset', () => {
+    it('Should create a new asset', () => {
         const asset_name = faker.word.noun();
         const asset_desc = faker.lorem.sentence();
         const kks_num = faker.string.numeric(4);
@@ -61,7 +61,21 @@ describe('Assets Functionality', () => {
         cy.get('[class="swal2-confirm btn btn-primary hover:text-white"]').click();
     })
 
-    it('should delet an asset', () => {
+    it('Should update an asset', () => {
+        cy.get(':nth-child(2) > .nav-item').click();
+        cy.get('[href="#/page/assets"] > p').click();
+        cy.get('.divide-y-2 > :nth-child(1) > :nth-child(1) > div').click();
+        cy.get('[class="text-sm text-white"]').contains('Choose Action').click();
+        cy.get('[class="ml-2"]').contains('Update/Edit Assets').click();
+        cy.get('[name="asset_description"]').type('Description edited');
+        cy.get('[type="submit"]').click();
+        cy.get('[class="swal2-confirm swal2-styled swal2-default-outline"]').click();
+        cy.contains('Success').should('be.visible');
+        cy.get('[class="swal2-confirm btn btn-primary hover:text-white"]').click();
+        cy.contains('Description edited').should('be.visible');
+    })
+
+    it('Should delete an asset', () => {
         cy.get(':nth-child(2) > .nav-item').click();
         cy.get('[href="#/page/assets"] > p').click();
         cy.get('.divide-y-2 > :nth-child(1) > :nth-child(1) > div').click();
@@ -70,6 +84,27 @@ describe('Assets Functionality', () => {
         cy.get('[class="swal2-confirm swal2-styled swal2-default-outline"]').click();
         cy.contains('Success').should('be.visible');
         cy.get('[class="swal2-confirm swal2-styled"]').click();
+    })
+
+    it('Should not create a new asset because the mandatory field is empty', () => {
+        const asset_name = faker.word.noun();
+        const kks_num = faker.string.numeric(4);
+        const ex_code = faker.string.numeric(4);
+
+        cy.get(':nth-child(2) > .nav-item').click();
+        cy.get('[href="#/page/assets"] > p').click();
+        cy.get('[class="text-sm text-white"]').contains('Choose Action').click();
+        cy.get('[class="ml-2"]').contains('New Assets').click();
+        cy.get('[name="asset_num"]').type(asset_name);
+        cy.get('[name="kks_number"]').type(kks_num);
+        cy.get('[name="existing_code"]').type(ex_code);
+        cy.get(':nth-child(5) > .w-full > .css-lsal45-control > .css-1wy0on6').click();
+        cy.get('#react-select-2-option-0').click();
+        cy.get(':nth-child(7) > .w-full > .css-lsal45-control > .css-1wy0on6').click();
+        cy.get('#react-select-4-option-0').click();
+        cy.get(':nth-child(6) > .row > :nth-child(3) > .css-b62m3t-container > .css-13cymwt-control > .css-1wy0on6 > .css-1xc3v61-indicatorContainer').click();
+        cy.get('#react-select-6-option-0').click();
+        cy.get('[type="submit"]').should('be.disabled');
     })
 
 })

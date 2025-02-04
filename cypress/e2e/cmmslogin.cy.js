@@ -3,7 +3,7 @@ describe('Login Functionality', () => {
         cy.visit('https://cmms.dev.aegislabs.work/#/page/assets/meters-&-groups');
     })
 
-    it('should log in with valid credentials', () => {
+    it('Login with valid credentials', () => {
         cy.fixture('user').then(user => {
             cy.get('[name="username"]').type(user.validUsername);
             cy.get('[name="password"]').type(user.validPassword);
@@ -12,7 +12,7 @@ describe('Login Functionality', () => {
         });
     })
 
-    it('should not log in with invalid credentials', () => {
+    it('Login with invalid credentials', () => {
         cy.fixture('user').then(user => {
             cy.get('[name="username"]').type(user.invalidUsername);
             cy.get('[name="password"]').type(user.invalidPassword);
@@ -21,7 +21,14 @@ describe('Login Functionality', () => {
         });
     })
 
-    it('should not log out from the system', () => {
+    it('Should not log in because of password is empty', () => {
+        cy.fixture('user').then(user => {
+            cy.get('[name="username"]').type(user.invalidUsername);
+            cy.get('[type="submit"]').should('be.disabled');
+        });
+    })
+
+    it('Should log out from the system', () => {
         cy.fixture('user').then(user => {
             cy.get('[name="username"]').type(user.validUsername);
             cy.get('[name="password"]').type(user.validPassword);
